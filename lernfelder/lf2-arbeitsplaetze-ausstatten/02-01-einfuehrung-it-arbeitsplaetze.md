@@ -666,23 +666,6 @@ Häufige Probleme:
 
 ---
 
-## Was sollte ich können?
-
-Ich sollte erklären können:
-
-- was ein IT-Arbeitsplatz ist
-- welche Teile zu einem Arbeitsplatz gehören
-- was Hardware und Software unterscheidet
-- welche Grundfunktionen ein Computer hat
-- was CPU, RAM und Speicher grundsätzlich machen
-- warum Netzwerkzugang wichtig ist
-- warum Benutzerrechte wichtig sind
-- warum IT-Sicherheit zum Arbeitsplatz gehört
-- welche Trends moderne IT-Arbeitsplätze beeinflussen
-- warum unterschiedliche Aufgaben unterschiedliche Ausstattung benötigen
-
----
-
 ## Kurze Zusammenfassung
 
 Ein IT-Arbeitsplatz besteht aus vielen Teilen: Hardware, Software, Netzwerk, Benutzerkonto, Sicherheit und Peripherie.
