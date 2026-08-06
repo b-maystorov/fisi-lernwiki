@@ -1,8 +1,8 @@
-# 2.6 Bedarfs- und Anforderungsanalyse durchführen
+# 2.6 Bedarfs und Anforderungsanalyse durchführen
 
 In diesem Kapitel geht es darum, den Bedarf eines Kunden oder einer Fachabteilung systematisch zu erfassen und daraus konkrete Anforderungen abzuleiten.
 
-Eine Bedarfs- und Anforderungsanalyse ist die Grundlage für eine passende IT-Lösung. Ohne eine saubere Analyse besteht die Gefahr, dass Hardware, Software oder Dienstleistungen falsch geplant werden.
+Eine Bedarfs und Anforderungsanalyse ist die Grundlage für eine passende IT-Lösung. Ohne eine saubere Analyse besteht die Gefahr, dass Hardware, Software oder Dienstleistungen falsch geplant werden.
 
 Für Fachinformatiker für Systemintegration ist dieses Thema wichtig, weil technische Entscheidungen immer aus echten Anforderungen entstehen sollten und nicht nur aus Vermutungen.
 
@@ -293,7 +293,7 @@ Dazu gehören:
 - Betriebssysteme
 - Netzwerkstruktur
 - IP-Adressierung
-- WLAN- oder LAN-Anbindung
+- WLAN oder LAN-Anbindung
 - Serverdienste
 - Benutzerverwaltung
 - Druckerumgebung
