@@ -21,19 +21,19 @@ Nach diesem Lernfeld sollte ich erklären können:
 
 ## Kapitelübersicht
 
-| Kapitel | Thema |
-|---|---|
-| [2.1](./2.1-einfuehrung-it-arbeitsplaetze.md) | Einführung in die IT für Arbeitsplätze |
-| [2.2](./2.2-leistungsportfolio.md) | Leistungsportfolio im IT-Bereich |
-| [2.3](./2.3-auswahlkriterien-it-produkte.md) | Auswahlkriterien für IT-Produkte |
-| [2.4](./2.4-komponenten-arbeitsplatzcomputer.md) | Komponenten eines Arbeitsplatzcomputers |
-| [2.5](./2.5-kundenanforderungen.md) | Kundenanforderungen im Leistungsprozess |
-| [2.6](./2.6-bedarfs-und-anforderungsanalyse.md) | Bedarfs- und Anforderungsanalyse |
-| [2.7](./2.7-pflichtenheft.md) | Pflichtenheft erstellen |
-| [2.8](./2.8-angebote-kosten-stundensaetze.md) | Angebote, Kosten und Stundensätze |
-| [2.9](./2.9-angebotsvergleich.md) | Angebotsvergleich |
-| [2.10](./2.10-lieferung-installation-uebergabe.md) | Lieferung, Installation und Übergabe |
-| [2.11](./2.11-kontrolle-und-reflexion.md) | Kontrolle und Reflexion |
+| Kapitel                                             | Thema                                                    |
+| --------------------------------------------------- | -------------------------------------------------------- |
+| [2.1](./02-01-einfuehrung-it-arbeitsplaetze.md)     | Einführung in die IT für Arbeitsplätze                   |
+| [2.2](./02-02-leistungsportfolio.md)                | Leistungsportfolio im IT-Bereich                         |
+| [2.3](./02-03-auswahlkriterien-it-produkte.md)      | Auswahlkriterien für IT-Produkte                         |
+| [2.4](./02-04-komponenten-arbeitsplatzcomputer.md)  | Komponenten eines Arbeitsplatzcomputers                  |
+| [2.5](./02-05-kundenanforderungen.md)               | Kundenanforderungen im Leistungsprozess berücksichtigen  |
+| [2.6](./02-06-bedarfs-und-anforderungsanalyse.md)   | Bedarfs- und Anforderungsanalyse durchführen             |
+| [2.7](./02-07-pflichtenheft.md)                     | Pflichtenheft erstellen                                  |
+| [2.8](./02-08-angebote-kosten-stundensaetze.md)     | Angebote, Kosten und Stundensätze kalkulieren            |
+| [2.9](./02-09-angebotsvergleich.md)                 | Angebotsvergleiche bei Beschaffungsmaßnahmen durchführen |
+| [2.10](./02-10-lieferung-installation-uebergabe.md) | Lieferung, Installation und Übergabe vornehmen           |
+| [2.11](./02-11-kontrolle-und-reflexion.md)          | Kontrolle und Reflexion                                  |
 
 ---
 
@@ -67,4 +67,3 @@ Jedes Kapitel wird möglichst einfach erklärt:
 - Welche Begriffe muss ich kennen?
 - Wie sieht ein praktisches Beispiel aus?
 - Was sollte ich danach können?
-
