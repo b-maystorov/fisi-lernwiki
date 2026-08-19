@@ -1,510 +1,526 @@
-# Git & GitHub
+# Git und GitHub
 
-In diesem Bereich sammle ich Grundlagen und praxisnahe Arbeitsweisen rund um Git und GitHub.
+In diesem Bereich sammle ich Grundlagen und praktische Arbeitsweisen zu Git und GitHub.
 
-Git wird in der Softwareentwicklung, Systemadministration und im DevOps-Umfeld eingesetzt, um Änderungen an Dateien nachvollziehbar zu speichern und gemeinsam an Projekten zu arbeiten.
+Git ist ein Versionsverwaltungssystem. Damit kann man Änderungen an Dateien nachvollziehen, ältere Zustände wiederherstellen, mit Branches arbeiten und Projekte sauber dokumentieren. GitHub ist eine Plattform, auf der Git-Repositories online gespeichert, geteilt und gemeinsam bearbeitet werden können.
 
-Für Fachinformatiker für Systemintegration ist Git besonders nützlich für Skripte, Konfigurationsdateien, Dokumentationen, Automatisierung und Infrastrukturprojekte.
+Für Fachinformatiker für Systemintegration ist Git wichtig, weil viele IT-Projekte, Skripte, Dokumentationen, Konfigurationen und Automatisierungen versioniert werden. Auch in Teams ist Git eine wichtige Grundlage, um Änderungen nachvollziehbar und kontrolliert durchzuführen.
 
 ---
 
-## Kurz erklärt
+## Ziel dieses Bereichs
 
-Git ist ein verteiltes Versionskontrollsystem.
+Dieser Bereich soll Git und GitHub praxisnah erklären.
 
-Damit können Änderungen an Dateien gespeichert, verglichen und bei Bedarf wiederhergestellt werden.
+Es geht nicht nur darum, einzelne Befehle auswendig zu lernen. Wichtig ist zu verstehen, was Git im Hintergrund macht und wie man typische Situationen sauber löst.
 
-GitHub ist eine Plattform, auf der Git-Repositories zentral gespeichert und gemeinsam bearbeitet werden können.
+Wichtige Ziele sind:
 
-Wichtige Themen sind:
+- Git-Grundlagen verstehen
+- Repositories sicher nutzen
+- Arbeitsbereiche von Git unterscheiden
+- Änderungen sauber committen
+- Branches erstellen und zusammenführen
+- Remotes verstehen
+- mit GitHub arbeiten
+- Pull und Push richtig nutzen
+- `.gitignore` sinnvoll einsetzen
+- Fehler erkennen und beheben
+- SSH-Zugriff verstehen
+- mehrere GitHub-Konten sauber trennen
+- sinnvolle Workflows im Alltag nutzen
 
-- Git-Repositories
-- Working Directory
-- Staging Area
-- Commits
-- Branches
-- Merge
-- Remote-Repositories
-- Pull und Push
-- GitHub
+---
+
+## Kapitelübersicht
+
+| Kapitel                                        | Thema                             |
+| ---------------------------------------------- | --------------------------------- |
+| [1](./01-git-grundlagen.md)                    | Git Grundlagen                    |
+| [2](./02-repository-und-arbeitsbereiche.md)    | Repository und Arbeitsbereiche    |
+| [3](./03-commits-und-historie.md)              | Commits und Historie              |
+| [4](./04-branches-und-merge.md)                | Branches und Merge                |
+| [5](./05-remotes-pull-und-push.md)             | Remotes, Pull und Push            |
+| [6](./06-github-und-zusammenarbeit.md)         | GitHub und Zusammenarbeit         |
+| [7](./07-gitignore-und-dateiverwaltung.md)     | `.gitignore` und Dateiverwaltung  |
+| [8](./08-fehlersuche-und-wiederherstellung.md) | Fehlersuche und Wiederherstellung |
+| [9](./09-ssh-und-mehrere-github-konten.md)     | SSH und mehrere GitHub-Konten     |
+| [10](./10-git-workflows-in-der-praxis.md)      | Git-Workflows in der Praxis       |
+
+---
+
+## Was ist Git?
+
+Git ist ein Werkzeug zur Versionsverwaltung.
+
+Mit Git kann man Änderungen an Dateien speichern und später nachvollziehen.
+
+Ein Git-Projekt besteht aus vielen gespeicherten Zuständen. Diese gespeicherten Zustände heißen Commits.
+
+Ein Commit ist wie ein sauberer Zwischenstand eines Projekts.
+
+Git hilft zum Beispiel bei Fragen wie:
+
+- Was wurde geändert?
+- Wann wurde etwas geändert?
+- Wer hat etwas geändert?
+- Warum wurde etwas geändert?
+- Welche Datei war betroffen?
+- Wie sah das Projekt vorher aus?
+- Kann man eine Änderung rückgängig machen?
+
+Git wird besonders häufig in Softwareentwicklung, DevOps, Dokumentation, Skripting und Infrastrukturprojekten genutzt.
+
+---
+
+## Was ist GitHub?
+
+GitHub ist eine Online-Plattform für Git-Repositories.
+
+Ein Repository kann lokal auf dem eigenen Rechner liegen und zusätzlich online auf GitHub gespeichert werden.
+
+GitHub wird genutzt für:
+
+- Quellcode
+- Dokumentation
+- Projektarbeit
+- Zusammenarbeit im Team
+- Issues
 - Pull Requests
-- `.gitignore`
-- SSH
-- Konflikte
-- Wiederherstellung
-- Zusammenarbeit
-- typische Git-Workflows
+- Releases
+- Wikis
+- Portfolio-Projekte
+- Open-Source-Projekte
 
----
+GitHub ersetzt Git nicht.  
+GitHub nutzt Git.
 
-## Inhalte
+Der Unterschied ist wichtig:
 
-| Kapitel                                       | Thema                             |
-| --------------------------------------------- | --------------------------------- |
-| [01](01-git-grundlagen.md)                    | Git Grundlagen                    |
-| [02](02-repository-und-arbeitsbereiche.md)    | Repository und Arbeitsbereiche    |
-| [03](03-commits-und-historie.md)              | Commits und Historie              |
-| [04](04-branches-und-merge.md)                | Branches und Merge                |
-| [05](05-remotes-pull-und-push.md)             | Remotes, Pull und Push            |
-| [06](06-github-und-zusammenarbeit.md)         | GitHub und Zusammenarbeit         |
-| [07](07-gitignore-und-dateiverwaltung.md)     | `.gitignore` und Dateiverwaltung  |
-| [08](08-fehlersuche-und-wiederherstellung.md) | Fehlersuche und Wiederherstellung |
-| [09](09-ssh-und-mehrere-github-konten.md)     | SSH und mehrere GitHub-Konten     |
-| [10](10-git-workflows-in-der-praxis.md)       | Git-Workflows in der Praxis       |
+| Begriff    | Bedeutung                                                     |
+| ---------- | ------------------------------------------------------------- |
+| Git        | Versionsverwaltung auf dem eigenen System                     |
+| GitHub     | Online-Plattform für Git-Repositories                         |
+| Repository | Projektordner mit Git-Historie                                |
+| Remote     | entfernte Version eines Repositories, zum Beispiel auf GitHub |
 
 ---
 
 ## Warum Git wichtig ist
 
-Ohne Versionskontrolle werden Änderungen häufig direkt an Dateien vorgenommen.
+Ohne Git werden Änderungen oft unübersichtlich.
 
-Dadurch entstehen schnell Probleme:
-
-- alte Versionen gehen verloren
-- Änderungen sind schwer nachvollziehbar
-- mehrere Personen überschreiben gegenseitig ihre Arbeit
-- Fehler können nur schwer rückgängig gemacht werden
-- Konfigurationsänderungen sind schlecht dokumentiert
-- verschiedene Dateiversionen werden manuell gespeichert
-
-Typische Dateinamen wie:
+Typische schlechte Dateinamen ohne Versionsverwaltung:
 
 ```text
-config-neu.conf
-config-neu2.conf
-config-final.conf
-config-final-wirklich.conf
+projekt-final.txt
+projekt-final-neu.txt
+projekt-final-wirklich-neu.txt
+projekt-final-abgabe.txt
+projekt-final-abgabe-korrektur.txt
 ```
 
-sind kein sinnvoller Ersatz für Versionskontrolle.
-
-Mit Git können Änderungen als einzelne Commits gespeichert werden.
-
-Dadurch entsteht eine nachvollziehbare Historie.
-
----
-
-## Git und GitHub sind nicht dasselbe
-
-Git und GitHub werden häufig zusammen verwendet, sind aber unterschiedliche Dinge.
-
-| Git                             | GitHub                                      |
-| ------------------------------- | ------------------------------------------- |
-| Versionskontrollsystem          | Plattform für Git-Repositories              |
-| läuft lokal auf dem Computer    | läuft als Online-Dienst                     |
-| verwaltet Commits und Branches  | stellt Repositories zentral bereit          |
-| benötigt kein GitHub            | basiert auf Git                             |
-| funktioniert auch ohne Internet | ermöglicht Zusammenarbeit über das Internet |
-
-Git kann vollständig lokal verwendet werden.
+Mit Git speichert man stattdessen klare Zwischenstände.
 
 Beispiel:
 
-```bash
-git init
-git add .
-git commit -m "Initial commit"
+```text
+Add Linux README
+Fix typo in Git chapter
+Update Docker documentation
+Add troubleshooting notes
 ```
 
-Dafür wird noch kein GitHub-Konto benötigt.
+Dadurch bleibt nachvollziehbar, was passiert ist.
 
-GitHub wird wichtig, wenn ein Repository zentral gespeichert oder gemeinsam genutzt werden soll.
+Git ist besonders wichtig, wenn mehrere Personen an einem Projekt arbeiten oder wenn ein Projekt langfristig gepflegt wird.
+
+---
+
+## Grundidee von Git
+
+Git arbeitet mit mehreren Bereichen.
+
+Wichtige Begriffe:
+
+| Begriff           | Bedeutung                                       |
+| ----------------- | ----------------------------------------------- |
+| Working Directory | aktueller Arbeitsordner mit Dateien             |
+| Staging Area      | vorbereitete Änderungen für den nächsten Commit |
+| Repository        | gespeicherte Git-Historie                       |
+| Commit            | gespeicherter Projektstand                      |
+| Branch            | Entwicklungszweig                               |
+| Remote            | entfernte Kopie des Repositories                |
+| Push              | lokale Commits zum Remote hochladen             |
+| Pull              | Änderungen vom Remote holen und integrieren     |
+
+Ein typischer Ablauf sieht so aus:
+
+```bash
+git status
+git add datei.md
+git commit -m "Add documentation"
+git push
+```
 
 ---
 
 ## Typischer Git-Ablauf
 
-Ein einfacher Git-Workflow sieht so aus:
+Ein einfacher Git-Arbeitsablauf:
 
-```text
-Datei ändern
-     ↓
+```bash
 git status
-     ↓
-git diff
-     ↓
-git add
-     ↓
-git commit
-     ↓
-git pull
-     ↓
+git add .
+git commit -m "Describe change"
 git push
 ```
 
-Nicht jeder Workflow sieht exakt so aus.
+Bedeutung:
 
-Die grundlegende Idee bleibt aber ähnlich:
+| Befehl       | Aufgabe                              |
+| ------------ | ------------------------------------ |
+| `git status` | zeigt den aktuellen Zustand          |
+| `git add`    | nimmt Änderungen in die Staging Area |
+| `git commit` | speichert Änderungen lokal           |
+| `git push`   | lädt Commits zu GitHub hoch          |
 
-1. Änderungen durchführen
-2. Änderungen kontrollieren
-3. gewünschte Dateien zum Commit vorbereiten
-4. Commit erstellen
-5. Änderungen mit dem Remote-Repository abgleichen
-6. Änderungen hochladen
+Wichtig:
 
----
+Vor `git add` sollte man immer mit `git status` prüfen, welche Dateien geändert wurden.
 
-## Git im Administrationsbereich
-
-Git wird nicht nur für Programmcode verwendet.
-
-Auch Administratoren können Git für viele Dateien und Projekte einsetzen.
-
-Beispiele:
-
-- Bash-Skripte
-- Python-Skripte
-- Dockerfiles
-- Docker-Compose-Dateien
-- Ansible-Konfigurationen
-- Terraform-Dateien
-- Dokumentation
-- Markdown-Dateien
-- Konfigurationsvorlagen
-- Installationsskripte
-- Netzwerkdokumentation
-
-Ein Repository kann zum Beispiel so aussehen:
-
-```text
-server-config/
-├── README.md
-├── scripts/
-├── docker/
-├── configs/
-└── docs/
-```
-
-Änderungen können anschließend über Git dokumentiert werden.
+Bei größeren Projekten ist es besser, gezielt Dateien zu adden statt immer blind `git add .` zu nutzen.
 
 ---
 
 ## Wichtige Git-Befehle
 
-| Befehl          | Bedeutung                                 |
-| --------------- | ----------------------------------------- |
-| `git init`      | neues Repository erstellen                |
-| `git clone`     | Repository kopieren                       |
-| `git status`    | aktuellen Zustand anzeigen                |
-| `git add`       | Änderungen für einen Commit vormerken     |
-| `git commit`    | Änderungen speichern                      |
-| `git log`       | Commit-Historie anzeigen                  |
-| `git diff`      | Änderungen vergleichen                    |
-| `git branch`    | Branches anzeigen oder verwalten          |
-| `git switch`    | Branch wechseln                           |
-| `git merge`     | Branches zusammenführen                   |
-| `git remote -v` | Remote-Repositories anzeigen              |
-| `git fetch`     | Änderungen vom Remote abrufen             |
-| `git pull`      | Remote-Änderungen abrufen und integrieren |
-| `git push`      | lokale Commits hochladen                  |
-| `git restore`   | Änderungen an Dateien zurücksetzen        |
-| `git stash`     | Änderungen vorübergehend speichern        |
+| Befehl                     | Bedeutung                                     |
+| -------------------------- | --------------------------------------------- |
+| `git status`               | aktuellen Zustand anzeigen                    |
+| `git add datei`            | Datei für Commit vormerken                    |
+| `git add .`                | alle Änderungen im aktuellen Ordner vormerken |
+| `git commit -m "Text"`     | Commit mit Nachricht erstellen                |
+| `git log`                  | Commit-Historie anzeigen                      |
+| `git diff`                 | Änderungen anzeigen                           |
+| `git branch`               | Branches anzeigen                             |
+| `git switch branchname`    | Branch wechseln                               |
+| `git switch -c branchname` | neuen Branch erstellen und wechseln           |
+| `git merge branchname`     | Branch zusammenführen                         |
+| `git remote -v`            | Remotes anzeigen                              |
+| `git pull`                 | Änderungen vom Remote holen                   |
+| `git push`                 | lokale Commits hochladen                      |
+| `git restore datei`        | Änderungen an Datei verwerfen                 |
+| `git stash`                | Änderungen kurzfristig weglegen               |
+| `git clone url`            | Repository herunterladen                      |
 
-Die einzelnen Befehle werden in den folgenden Kapiteln genauer behandelt.
+Diese Befehle sind die Grundlage für die tägliche Arbeit mit Git.
 
 ---
 
-## Lokales und Remote-Repository
+## Commit-Nachrichten
 
-Ein Git-Projekt kann lokal und zusätzlich auf einem Remote-Server gespeichert sein.
+Commit-Nachrichten sollten kurz und verständlich sein.
 
-Beispiel:
+Gute Beispiele:
 
 ```text
-Lokaler Computer
-      │
-      │ git push
-      ▼
-GitHub Repository
-      ▲
-      │ git pull
-      │
-anderer Computer
+Add Linux package management chapter
+Update GitHub README
+Fix typo in network chapter
+Create Docker practice notes
+Improve troubleshooting section
 ```
 
-Das lokale Repository enthält die vollständige Git-Historie.
+Weniger gute Beispiele:
 
-Das Remote-Repository dient unter anderem als:
-
-- zentraler Austauschpunkt
-- Backup zusätzlicher Repository-Kopien
-- Grundlage für Zusammenarbeit
-- Plattform für Pull Requests
-- öffentliches Portfolio
-- Dokumentationsplattform
-
----
-
-## Änderungen kontrollieren
-
-Vor einem Commit sollte geprüft werden, was tatsächlich geändert wurde.
-
-Dafür sind besonders wichtig:
-
-```bash
-git status
+```text
+update
+changes
+stuff
+final
+fix
+asdf
 ```
 
-und:
+Eine gute Commit-Nachricht erklärt kurz, was geändert wurde.
 
-```bash
-git diff
-```
-
-`git status` zeigt unter anderem:
-
-- geänderte Dateien
-- neue Dateien
-- gelöschte Dateien
-- Dateien in der Staging Area
-- aktuellen Branch
-
-`git diff` zeigt die tatsächlichen Änderungen innerhalb der Dateien.
-
-Dadurch können versehentliche Änderungen erkannt werden, bevor sie gespeichert oder hochgeladen werden.
-
----
-
-## Kleine und verständliche Commits
-
-Ein Commit sollte möglichst eine zusammengehörige Änderung enthalten.
-
-Beispiel:
-
-```bash
-git commit -m "Add Linux networking chapter"
-```
-
-Ein guter Commit beschreibt kurz, was geändert wurde.
-
-Weniger sinnvoll:
-
-```bash
-git commit -m "stuff"
-```
-
-oder:
-
-```bash
-git commit -m "changes"
-```
-
-Eine verständliche Commit-Historie hilft später bei der Fehlersuche und Dokumentation.
+Sie muss nicht extrem lang sein, aber sie sollte später noch verständlich sein.
 
 ---
 
 ## Branches
 
-Branches ermöglichen parallele Entwicklungsstände innerhalb eines Repositorys.
+Ein Branch ist ein Entwicklungszweig.
+
+Branches sind nützlich, wenn man an einer Änderung arbeiten möchte, ohne direkt den Hauptstand zu verändern.
 
 Beispiel:
+
+```bash
+git switch -c update-readme
+```
+
+Danach arbeitet man auf dem neuen Branch.
+
+Später kann der Branch wieder zusammengeführt werden.
+
+Branches werden oft genutzt für:
+
+- neue Features
+- Fehlerbehebungen
+- Tests
+- Dokumentationsänderungen
+- Teamarbeit
+- Pull Requests
+
+Der Hauptbranch heißt oft:
 
 ```text
 main
-  │
-  ├── commit A
-  ├── commit B
-  │
-  └──── feature-branch
-          │
-          ├── commit C
-          └── commit D
 ```
 
-Neue Funktionen oder größere Änderungen können zunächst in einem eigenen Branch entwickelt werden.
-
-Nach erfolgreicher Prüfung können sie mit dem Hauptbranch zusammengeführt werden.
-
----
-
-## Zusammenarbeit mit GitHub
-
-GitHub erweitert Git um Funktionen für Zusammenarbeit.
-
-Dazu gehören unter anderem:
-
-- zentrale Repositories
-- Pull Requests
-- Code Reviews
-- Issues
-- Projektverwaltung
-- Repository-Berechtigungen
-- Actions
-- Releases
-- Dokumentation
-
-Ein typischer Team-Workflow kann so aussehen:
+oder älter:
 
 ```text
-Repository klonen
-      ↓
-Branch erstellen
-      ↓
-Änderungen durchführen
-      ↓
-Commit erstellen
-      ↓
-Branch pushen
-      ↓
-Pull Request erstellen
-      ↓
-Review
-      ↓
-Merge
+master
 ```
-
-Dadurch können Änderungen geprüft werden, bevor sie in den Hauptbranch gelangen.
 
 ---
 
-## Sicherheit
+## Remotes
 
-Nicht jede Datei gehört in ein Git-Repository.
+Ein Remote ist eine entfernte Version eines Repositories.
 
-Besonders sensible Daten sollten niemals veröffentlicht werden.
+Bei GitHub ist das meistens das Repository auf github.com.
 
-Dazu gehören zum Beispiel:
+Remotes anzeigen:
 
-- Passwörter
-- private SSH-Schlüssel
-- API-Keys
-- Tokens
-- Zugangsdaten
-- private Zertifikate
-- interne vertrauliche Konfigurationen
-- personenbezogene Daten
+```bash
+git remote -v
+```
 
-Solche Dateien können über `.gitignore` ausgeschlossen werden.
+Beispielausgabe:
+
+```text
+origin  git@github.com:user/repo.git (fetch)
+origin  git@github.com:user/repo.git (push)
+```
+
+`origin` ist der Standardname für das Haupt-Remote.
+
+Mit Remotes kann man lokale Arbeit mit GitHub synchronisieren.
+
+---
+
+## Pull und Push
+
+`push` lädt lokale Commits zum Remote hoch.
+
+```bash
+git push
+```
+
+`pull` holt Änderungen vom Remote und integriert sie lokal.
+
+```bash
+git pull
+```
+
+Typische Situation:
+
+Wenn auf GitHub direkt eine Datei geändert wurde und lokal auch Änderungen existieren, kann ein Push abgelehnt werden.
+
+Dann muss man zuerst die entfernten Änderungen holen.
 
 Beispiel:
 
-```gitignore
-.env
-*.key
-*.pem
-secrets/
+```bash
+git pull --rebase origin main
+git push
 ```
 
 Wichtig:
 
-`.gitignore` schützt keine Datei, die bereits in Git eingecheckt wurde.
-
-Sensible Daten sollten deshalb bereits vor dem ersten Commit erkannt und ausgeschlossen werden.
+Man sollte Fehlermeldungen von Git genau lesen. Git sagt meistens ziemlich genau, warum ein Push oder Pull nicht funktioniert.
 
 ---
 
-## Git ersetzt kein Backup
+## `.gitignore`
 
-Git speichert Dateiversionen und Änderungen sehr zuverlässig.
+Die Datei `.gitignore` legt fest, welche Dateien Git ignorieren soll.
 
-Trotzdem ist Git kein vollständiges Backup-System.
+Typische Dateien, die nicht ins Repository gehören:
 
-Ein Repository schützt zum Beispiel nicht automatisch:
+- temporäre Dateien
+- Logdateien
+- lokale Editor-Dateien
+- virtuelle Python-Umgebungen
+- private Notizen
+- Secrets
+- Passwörter
+- Build-Artefakte
+- Cache-Dateien
 
-- Datenbanken
-- virtuelle Maschinen
-- komplette Betriebssysteme
-- laufende Server
-- Binärdaten
-- große Backup-Archive
+Beispiel:
 
-Git ist hauptsächlich für versionierbare Dateien gedacht.
+```gitignore
+__pycache__/
+*.pyc
+.venv/
+.env
+.vscode/
+*.log
+```
 
-Ein Remote-Repository bietet eine zusätzliche Kopie des Projekts, ersetzt aber keine vollständige Backup-Strategie.
+Wichtig:
 
----
+`.gitignore` schützt nicht automatisch Dateien, die bereits getrackt werden.
 
-## Typische Fehler
-
-| Fehler                             | Problem                                                |
-| ---------------------------------- | ------------------------------------------------------ |
-| `git status` nicht prüfen          | falsche Dateien können committed werden                |
-| `git diff` nicht prüfen            | unerwünschte Änderungen bleiben unbemerkt              |
-| sehr große Commits                 | Änderungen sind schwer nachvollziehbar                 |
-| unklare Commit-Nachrichten         | Historie wird schwer verständlich                      |
-| Passwörter committen               | Sicherheitsrisiko                                      |
-| direkt auf `main` arbeiten         | bei Teamprojekten oft ungünstig                        |
-| `pull` vergessen                   | lokale und entfernte Historie können auseinanderlaufen |
-| falscher Branch                    | Änderungen landen an der falschen Stelle               |
-| Merge-Konflikte ignorieren         | Code oder Konfiguration kann beschädigt werden         |
-| `.gitignore` falsch verstehen      | bereits getrackte Dateien bleiben in Git               |
-| `reset` ohne Verständnis verwenden | Commits oder Änderungen können verloren gehen          |
+Wenn eine Datei schon im Repository ist, muss sie aktiv aus dem Tracking entfernt werden.
 
 ---
 
-## Praktischer Einsatz
+## GitHub und Zusammenarbeit
 
-Dieses Lern-Wiki selbst ist ein Beispiel für einen Git-Workflow.
+GitHub wird häufig für Teamarbeit genutzt.
 
-Bei einer neuen Dokumentation kann der Ablauf zum Beispiel so aussehen:
+Wichtige Funktionen:
+
+| Funktion     | Bedeutung                                   |
+| ------------ | ------------------------------------------- |
+| Repository   | Projekt auf GitHub                          |
+| Issue        | Aufgabe, Fehler oder Diskussion             |
+| Pull Request | Vorschlag für Änderungen                    |
+| Review       | Prüfung von Änderungen                      |
+| Fork         | eigene Kopie eines fremden Repositories     |
+| Star         | Markierung eines interessanten Repositories |
+| README       | Startseite und Erklärung eines Projekts     |
+
+In Teams arbeitet man oft nicht direkt auf `main`, sondern über Branches und Pull Requests.
+
+Das macht Änderungen kontrollierbarer.
+
+---
+
+## SSH und GitHub
+
+GitHub kann über HTTPS oder SSH genutzt werden.
+
+Bei SSH arbeitet man mit Schlüsselpaaren:
+
+- privater Schlüssel bleibt auf dem eigenen Rechner
+- öffentlicher Schlüssel wird bei GitHub hinterlegt
+
+SSH ist praktisch, weil man ohne Passwort-Eingabe pushen und pullen kann.
+
+Prüfen kann man die Verbindung zum Beispiel mit:
+
+```bash
+ssh -T git@github.com
+```
+
+Bei mehreren GitHub-Konten muss die SSH-Konfiguration sauber getrennt werden.
+
+Das ist besonders wichtig, wenn man private und schulische oder berufliche Repositories getrennt verwalten möchte.
+
+---
+
+## Git im FISI-Alltag
+
+Git ist nicht nur für klassische Softwareentwicklung wichtig.
+
+Für FISI kann Git genutzt werden für:
+
+- Linux-Dokumentation
+- Netzwerkdokumentation
+- Skripte
+- Docker-Projekte
+- Konfigurationsbeispiele
+- Home-Lab-Dokumentation
+- Schulprojekte
+- Projektberichte
+- Automatisierungen
+- Markdown-Wikis
+- Infrastruktur-Dokumentation
+
+Auch kleine Änderungen an Dokumentation oder Skripten sollten sauber versioniert werden.
+
+So bleibt nachvollziehbar, was sich geändert hat.
+
+---
+
+## Typische Fehler beim Lernen von Git
+
+| Fehler                                          | Problem                                  |
+| ----------------------------------------------- | ---------------------------------------- |
+| `git status` nicht nutzen                       | man weiß nicht, was geändert wurde       |
+| zu große Commits machen                         | Änderungen sind schwer nachvollziehbar   |
+| schlechte Commit-Nachrichten                    | Historie wird unverständlich             |
+| blind `git add .` nutzen                        | ungewollte Dateien landen im Commit      |
+| Pull und Push verwechseln                       | Synchronisation wird unklar              |
+| direkt auf GitHub und lokal gleichzeitig ändern | Konflikte oder abgelehnte Pushes         |
+| `.gitignore` zu spät erstellen                  | unnötige Dateien werden bereits getrackt |
+| Branches nicht verstehen                        | Teamarbeit wird schwer                   |
+| Fehlermeldungen nicht lesen                     | einfache Probleme wirken kompliziert     |
+| private Daten committen                         | Sicherheitsproblem                       |
+
+---
+
+## Sicher arbeiten mit Git
+
+Gute Gewohnheiten:
+
+1. Vor Änderungen Status prüfen:
 
 ```bash
 git status
 ```
 
-Datei bearbeiten.
-
-Danach:
+2. Änderungen ansehen:
 
 ```bash
 git diff
 ```
 
-Änderung vorbereiten:
+3. Nur passende Dateien vormerken:
 
 ```bash
-git add pfad/zur/datei.md
+git add datei.md
 ```
 
-Commit erstellen:
+4. Saubere Commit-Nachricht schreiben:
 
 ```bash
-git commit -m "Add new documentation chapter"
+git commit -m "Add Git basics chapter"
 ```
 
-Repository aktualisieren und Änderung hochladen:
+5. Hochladen:
 
 ```bash
-git pull
 git push
 ```
 
-Damit wird nicht nur die aktuelle Datei gespeichert, sondern auch ihre Änderungshistorie dokumentiert.
+6. Danach prüfen:
 
----
+```bash
+git status
+```
 
-## FISI-Bezug
+Das Ziel ist ein sauberer Arbeitsstand:
 
-Für Fachinformatiker für Systemintegration ist Git besonders bei Dokumentation, Automatisierung und modernen Infrastrukturprojekten nützlich.
-
-Typische Einsatzbereiche sind:
-
-- Skripte versionieren
-- Konfigurationsdateien verwalten
-- Änderungen dokumentieren
-- gemeinsam an Projekten arbeiten
-- Docker-Konfigurationen speichern
-- Automatisierungsdateien verwalten
-- Infrastruktur als Code verwenden
-- Dokumentationen pflegen
-- Fehler über die Versionshistorie nachvollziehen
-- Änderungen vor der Übernahme prüfen
-
-Git gehört außerdem zu vielen DevOps- und Cloud-Workflows.
-
-Ein grundlegendes Verständnis von Git hilft deshalb auch bei späteren Themen wie CI/CD, Infrastructure as Code und automatisierter Systembereitstellung.
+```text
+nothing to commit, working tree clean
+```
 
 ---
 
 ## Kurze Zusammenfassung
 
-Git ist ein verteiltes Versionskontrollsystem zur Verwaltung von Dateien und Änderungen.
+Git ist ein Versionsverwaltungssystem. Damit können Änderungen gespeichert, verglichen und wiederhergestellt werden.
 
-GitHub ist eine Plattform, auf der Git-Repositories zentral gespeichert und gemeinsam bearbeitet werden können.
+GitHub ist eine Plattform, um Git-Repositories online zu speichern und gemeinsam daran zu arbeiten.
 
-Wichtige Git-Konzepte sind Repository, Working Directory, Staging Area, Commit, Branch, Merge und Remote.
+Wichtige Grundlagen sind Repository, Working Directory, Staging Area, Commit, Branch, Remote, Pull, Push, `.gitignore`, SSH und Pull Requests.
 
-Für die tägliche Arbeit sind Befehle wie `git status`, `git diff`, `git add`, `git commit`, `git pull` und `git push` besonders wichtig.
-
-Für Fachinformatiker für Systemintegration ist Git ein nützliches Werkzeug für Skripte, Konfigurationen, Dokumentationen, Automatisierung und moderne Infrastrukturprojekte.
+Für Fachinformatiker für Systemintegration ist Git wichtig, weil Dokumentation, Skripte, Konfigurationen und Projekte nachvollziehbar versioniert werden müssen.
