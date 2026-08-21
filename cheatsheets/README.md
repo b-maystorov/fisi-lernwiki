@@ -25,12 +25,13 @@ Der Fokus liegt auf:
 
 ## Übersicht
 
-| Cheatsheet                                | Thema                                                        |
-| ----------------------------------------- | ------------------------------------------------------------ |
-| [Linux-Befehle](./linux-befehle.md)       | wichtige Linux-Kommandos für Alltag und Administration       |
-| [Git-Befehle](./git-befehle.md)           | wichtige Git-Kommandos für Repository-Arbeit                 |
-| [Docker-Befehle](./docker-befehle.md)     | wichtige Docker-Kommandos für Container, Images und Logs     |
-| [Netzwerk-Befehle](./netzwerk-befehle.md) | wichtige Befehle für IP, DNS, Routing, Ports und Fehlersuche |
+| Cheatsheet                                | Thema                                                           |
+| ----------------------------------------- | --------------------------------------------------------------- |
+| [Linux-Befehle](./linux-befehle.md)       | wichtige Linux-Kommandos für Alltag und Administration          |
+| [Git-Befehle](./git-befehle.md)           | wichtige Git-Kommandos für Repository-Arbeit                    |
+| [Docker-Befehle](./docker-befehle.md)     | wichtige Docker-Kommandos für Container, Images und Logs        |
+| [Netzwerk-Befehle](./netzwerk-befehle.md) | wichtige Befehle für IP, DNS, Routing, Ports und Fehlersuche    |
+| [SQL-Befehle](./sql-befehle.md)           | wichtige SQL-Befehle für Abfragen, Tabellen und Datenverwaltung |
 
 ---
 
