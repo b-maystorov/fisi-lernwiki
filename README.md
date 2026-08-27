@@ -44,8 +44,8 @@ Dabei geht es besonders um:
 | [Git & GitHub](./git-github/)                                   | Versionsverwaltung und GitHub-Workflows                 | Version 1 abgeschlossen |
 | [Docker](./docker/)                                             | Container, Images, Volumes, Compose und Troubleshooting | Version 1 abgeschlossen |
 | [Cheatsheets](./cheatsheets/)                                   | Kurze Befehlsübersichten für die Praxis                 | Version 1 abgeschlossen |
-| [Datenbanken & SQL](./datenbanken-sql/)                         | SQL-Grundlagen und Datenbankbefehle                     | Version 1 abgeschlossen |             |
-| [Netzwerke](./netzwerke/)                                       | Netzwerkgrundlagen und Netzwerkdienste                  | geplant                 |
+| [Datenbanken & SQL](./datenbanken-sql/)                         | SQL-Grundlagen und Datenbankbefehle                     | Version 1 abgeschlossen |            
+| [Netzwerke](./netzwerke/)                                       | Netzwerkgrundlagen und Netzwerkdienste                  | Version 1 abgeschlossen |
 | [IT-Sicherheit](./it-sicherheit/)                               | Sicherheitsgrundlagen und Schutzmaßnahmen               | geplant                 |
 | [Virtualisierung](./virtualisierung/)                           | Virtuelle Maschinen und Laborumgebungen                 | geplant                 |
 
