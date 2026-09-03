@@ -46,8 +46,8 @@ Dabei geht es besonders um:
 | [Cheatsheets](./cheatsheets/)                                   | Kurze Befehlsübersichten für die Praxis                 | Version 1 abgeschlossen |
 | [Datenbanken & SQL](./datenbanken-sql/)                         | SQL-Grundlagen und Datenbankbefehle                     | Version 1 abgeschlossen |            
 | [Netzwerke](./netzwerke/)                                       | Netzwerkgrundlagen und Netzwerkdienste                  | Version 1 abgeschlossen |
-| [IT-Sicherheit](./it-sicherheit/)                               | Sicherheitsgrundlagen und Schutzmaßnahmen               | Version 1 abgeschlossen                 |
-| [Virtualisierung](./virtualisierung/)                           | Virtuelle Maschinen und Laborumgebungen                 | geplant                 |
+| [IT-Sicherheit](./it-sicherheit/)                               | Sicherheitsgrundlagen und Schutzmaßnahmen               | Version 1 abgeschlossen |
+| [Virtualisierung](./virtualisierung/)                           | Virtuelle Maschinen und Laborumgebungen                 | Version 1 abgeschlossen |
 
 ---
 
