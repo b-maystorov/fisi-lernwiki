@@ -2,7 +2,6 @@
 
 ![Status](https://img.shields.io/badge/Status-in%20Arbeit-blue)
 ![Ausbildung](https://img.shields.io/badge/Ausbildung-FISI-green)
-![Fokus](https://img.shields.io/badge/Fokus-Linux%20%7C%20Git%20%7C%20Docker%20%7C%20SQL-orange)
 ![Sprache](https://img.shields.io/badge/Sprache-Deutsch-lightgrey)
 
 Dieses Repository ist mein persönliches Lern-Wiki für die Umschulung zum **Fachinformatiker für Systemintegration**.
