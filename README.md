@@ -6,7 +6,7 @@
 
 Dieses Repository ist mein persönliches Lern-Wiki für die Umschulung zum **Fachinformatiker für Systemintegration**.
 
-Ich dokumentiere hier wichtige IT-Grundlagen, praktische Übungen und eigene Zusammenfassungen zu Themen wie Linux, Git, GitHub, Docker, Datenbanken, Netzwerken, IT-Sicherheit und systemnaher Administration.
+Ich dokumentiere hier wichtige IT-Grundlagen, praktische Übungen und eigene Zusammenfassungen zu Themen wie Linux, Windows-Grundlagen, Git, GitHub, Docker, Datenbanken, Netzwerken, IT-Sicherheit, Virtualisierung und systemnaher Administration.
 
 Der Fokus liegt darauf, technische Inhalte verständlich, sauber und öffentlich nachvollziehbar aufzubereiten.
 
@@ -27,26 +27,28 @@ Dabei geht es besonders um:
 - ein sauberes öffentliches Portfolio aufbauen
 - Lernfortschritt nachvollziehbar machen
 - technische Themen mit eigenen Worten wiederholen
+- Vorbereitung auf Praktikum und spätere Arbeit in der Systemintegration
 
 ---
 
 ## Aktueller Stand
 
-| Bereich                                                         | Inhalt                                                  | Status                  |
-| --------------------------------------------------------------- | ------------------------------------------------------- | ----------------------- |
-| [LF1](./lernfelder/lf1-unternehmen-und-rolle/)                  | Unternehmen und eigene Rolle                            | Basis angelegt          |
-| [LF2](./lernfelder/lf2-arbeitsplaetze-ausstatten/)              | Arbeitsplätze ausstatten                                | Version 1 abgeschlossen |
-| [LF3](./lernfelder/lf3-clients-in-netzwerke-einbinden/)         | Clients in Netzwerke einbinden                          | Version 1 abgeschlossen |
-| [LF4](./lernfelder/lf4-schutzbedarfsanalyse/)                   | Schutzbedarfsanalyse                                    | Version 1 abgeschlossen |
-| [LF5](./lernfelder/lf5-software-configuration-data-management/) | Software zur Verwaltung von Daten anpassen              | Version 1 abgeschlossen |
-| [Linux](./linux/)                                               | Linux-Grundlagen und Systemadministration               | Version 1 abgeschlossen |
-| [Git & GitHub](./git-github/)                                   | Versionsverwaltung und GitHub-Workflows                 | Version 1 abgeschlossen |
-| [Docker](./docker/)                                             | Container, Images, Volumes, Compose und Troubleshooting | Version 1 abgeschlossen |
-| [Cheatsheets](./cheatsheets/)                                   | Kurze Befehlsübersichten für die Praxis                 | Version 1 abgeschlossen |
-| [Datenbanken & SQL](./datenbanken-sql/)                         | SQL-Grundlagen und Datenbankbefehle                     | Version 1 abgeschlossen |            
-| [Netzwerke](./netzwerke/)                                       | Netzwerkgrundlagen und Netzwerkdienste                  | Version 1 abgeschlossen |
-| [IT-Sicherheit](./it-sicherheit/)                               | Sicherheitsgrundlagen und Schutzmaßnahmen               | Version 1 abgeschlossen |
-| [Virtualisierung](./virtualisierung/)                           | Virtuelle Maschinen und Laborumgebungen                 | Version 1 abgeschlossen |
+| Bereich | Inhalt | Status |
+|---|---|---|
+| [LF1](./lernfelder/lf1-unternehmen-und-rolle/) | Unternehmen und eigene Rolle | Basis angelegt |
+| [LF2](./lernfelder/lf2-arbeitsplaetze-ausstatten/) | Arbeitsplätze ausstatten | Version 1 abgeschlossen |
+| [LF3](./lernfelder/lf3-clients-in-netzwerke-einbinden/) | Clients in Netzwerke einbinden | Version 1 abgeschlossen |
+| [LF4](./lernfelder/lf4-schutzbedarfsanalyse/) | Schutzbedarfsanalyse | Version 1 abgeschlossen |
+| [LF5](./lernfelder/lf5-software-configuration-data-management/) | Software zur Verwaltung von Daten anpassen | Version 1 abgeschlossen |
+| [Linux](./linux/) | Linux-Grundlagen und Systemadministration | Version 1 abgeschlossen |
+| [Git & GitHub](./git-github/) | Versionsverwaltung und GitHub-Workflows | Version 1 abgeschlossen |
+| [Docker](./docker/) | Container, Images, Volumes, Compose und Troubleshooting | Version 1 abgeschlossen |
+| [Cheatsheets](./cheatsheets/) | Kurze Befehlsübersichten für die Praxis | Version 1 abgeschlossen |
+| [Datenbanken & SQL](./datenbanken-sql/) | SQL-Grundlagen und relationale Datenbanken | Version 1 abgeschlossen |
+| [Netzwerke](./netzwerke/) | Netzwerkgrundlagen, Dienste, Routing, NAT, VLANs und Troubleshooting | Version 1 abgeschlossen |
+| [IT-Sicherheit](./it-sicherheit/) | Sicherheitsgrundlagen, Schutzmaßnahmen, Datenschutz und Praxis | Version 1 abgeschlossen |
+| [Virtualisierung](./virtualisierung/) | Virtuelle Maschinen, Hypervisor, Netzwerkmodi, Snapshots und Backups | Version 1 abgeschlossen |
+| Python | Python-Grundlagen, Skripting, Dateien, Logs, JSON und Automatisierung | geplant |
 
 ---
 
@@ -54,7 +56,7 @@ Dabei geht es besonders um:
 
 ### Linux
 
-Der Linux-Bereich behandelt wichtige Grundlagen für Administration und Fehlersuche.
+Der Linux-Bereich behandelt wichtige Grundlagen für Administration, Serverbetrieb und Fehlersuche.
 
 Dazu gehören unter anderem:
 
@@ -70,6 +72,144 @@ Dazu gehören unter anderem:
 - praktische Systemadministration
 
 [Zum Linux-Bereich](./linux/)
+
+---
+
+### Windows und IT-Support
+
+Windows ist ein wichtiger Bereich für IT-Support und Systemintegration.
+
+Der Fokus liegt auf grundlegender Administration und Fehleranalyse.
+
+Dazu gehören unter anderem:
+
+- Windows 10 und Windows 11 Grundlagen
+- Client-Probleme analysieren
+- Netzwerkverbindungen prüfen
+- Benutzer unterstützen
+- Tickets sauber dokumentieren
+- typische Supportfälle verstehen
+- Vorbereitung auf Windows Server und Active Directory
+
+Dieser Bereich wird langfristig durch praktische Labs erweitert.
+
+---
+
+### Netzwerke
+
+Der Netzwerkbereich behandelt Grundlagen, die für Systemintegration und IT-Support sehr wichtig sind.
+
+Dazu gehören unter anderem:
+
+- Netzwerkgrundlagen
+- IP-Adressen
+- Subnetting
+- DNS
+- DHCP
+- Standardgateway
+- Routing
+- NAT
+- VLANs
+- WLAN-Grundlagen
+- Netzwerk-Troubleshooting
+
+[Zum Netzwerk-Bereich](./netzwerke/)
+
+---
+
+### Virtualisierung
+
+Der Virtualisierungsbereich behandelt virtuelle Maschinen und Laborumgebungen.
+
+Dazu gehören unter anderem:
+
+- Virtualisierung Grundlagen
+- virtuelle Maschinen
+- Hypervisor und Ressourcen
+- NAT, Bridge und Host-only
+- Snapshots
+- Backups
+- Sicherheit bei VMs
+- Virtualisierung in der FISI-Praxis
+
+[Zum Virtualisierungs-Bereich](./virtualisierung/)
+
+---
+
+### IT-Sicherheit
+
+Der IT-Sicherheitsbereich behandelt wichtige Grundlagen für sichere IT-Systeme.
+
+Dazu gehören unter anderem:
+
+- Schutzziele
+- Risiken
+- Zugriffsschutz
+- Passwörter und Authentifizierung
+- Firewall, Updates und Backups
+- Malware, Phishing und Social Engineering
+- Datenschutz und Dokumentation
+- IT-Sicherheit in der FISI-Praxis
+
+[Zum IT-Sicherheits-Bereich](./it-sicherheit/)
+
+---
+
+### Docker
+
+Der Docker-Bereich behandelt Container-Grundlagen und praktische Docker-Arbeit.
+
+Dazu gehören unter anderem:
+
+- Docker-Grundlagen
+- Images und Container
+- Volumes und Netzwerke
+- Docker Compose
+- Logs, Exec und Troubleshooting
+- Docker in der FISI-Praxis
+
+[Zum Docker-Bereich](./docker/)
+
+---
+
+### Datenbanken und SQL
+
+Der Datenbankbereich behandelt relationale Datenbanken und SQL-Grundlagen.
+
+Dazu gehören unter anderem:
+
+- Datenbankgrundlagen
+- Tabellen
+- Primärschlüssel und Fremdschlüssel
+- Beziehungen
+- SELECT-Abfragen
+- Filterung und Sortierung
+- JOINs
+- Daten ändern und verwalten
+
+[Zum SQL-Bereich](./datenbanken-sql/)
+
+---
+
+### Python
+
+Der Python-Bereich ist als FISI-orientierte Ergänzung geplant.
+
+Der Fokus liegt nicht auf reiner Softwareentwicklung, sondern auf praktischen Grundlagen für Skripting, Automatisierung und technische Aufgaben.
+
+Dazu gehören unter anderem:
+
+- Python-Grundlagen
+- Variablen und Datentypen
+- Kontrollstrukturen
+- Funktionen und Module
+- Dateien lesen und schreiben
+- Logs auswerten
+- JSON verarbeiten
+- Fehlerbehandlung
+- OOP-Grundlagen
+- einfache Automatisierungsskripte
+- Python in der FISI-Praxis
 
 ---
 
@@ -91,23 +231,6 @@ Dazu gehören unter anderem:
 - praktische Git-Workflows
 
 [Zum Git/GitHub-Bereich](./git-github/)
-
----
-
-### Docker
-
-Der Docker-Bereich behandelt Container-Grundlagen und praktische Docker-Arbeit.
-
-Dazu gehören unter anderem:
-
-- Docker-Grundlagen
-- Images und Container
-- Volumes und Netzwerke
-- Docker Compose
-- Logs, Exec und Troubleshooting
-- Docker in der FISI-Praxis
-
-[Zum Docker-Bereich](./docker/)
 
 ---
 
@@ -165,6 +288,21 @@ fisi-lernwiki/
 
 ---
 
+## Verwandte Projekte
+
+Einige praktische Projekte werden bewusst in eigenen Repositories geführt, damit das Lern-Wiki übersichtlich bleibt.
+
+| Projekt | Beschreibung |
+|---|---|
+| [CCNA Learning](https://github.com/b-maystorov/ccna-learning) | Separates Repository für Cisco Packet Tracer Labs, Subnetting, Routing, Switching und CCNA-Vorbereitung |
+| [Ubuntu Installation / Autoinstall](https://github.com/b-maystorov/ubuntu-installation-autoinstall) | Separates Projekt zur Ubuntu-Installation mit Autoinstall-YAML und Postinstall-Skript |
+| [Metropolis Library DB](https://github.com/b-maystorov/metropolis-library-db) | Separates Datenbankprojekt mit PostgreSQL, Docker und Adminer |
+| [Python Dungeon Dice Adventure](https://github.com/b-maystorov/python-dice-adventure) | Separates Python-Projekt zum Üben von OOP, Tests und Projektstruktur |
+
+Das Lern-Wiki bleibt damit die zentrale Wissensbasis. Größere praktische Projekte und Labs werden in eigenen Repositories dokumentiert.
+
+---
+
 ## Arbeitsweise
 
 Dieses Repository wird schrittweise erweitert.
@@ -198,9 +336,13 @@ Besonders sichtbar werden:
 - Arbeit mit Markdown
 - Git- und GitHub-Nutzung
 - Linux-Grundlagen
+- Windows- und IT-Support-Grundlagen
+- Netzwerkgrundlagen
+- Virtualisierung und Home-Lab-Bezug
+- IT-Sicherheit und Datenschutz
 - Docker-Grundlagen
 - SQL- und Datenbankbezug
-- Netzwerk- und Sicherheitsbezug
+- geplante Python-Grundlagen und Automatisierung
 - praxisnahes Lernen
 - saubere Repository-Struktur
 - regelmäßige Weiterentwicklung
@@ -215,14 +357,16 @@ Dieses Wiki soll mir helfen, wichtige Themen wiederzufinden und regelmäßig zu 
 
 Besonders nützlich ist es für:
 
-| Situation              | Nutzen                                             |
-| ---------------------- | -------------------------------------------------- |
-| Lernen                 | Themen strukturiert wiederholen                    |
-| Terminal-Praxis        | wichtige Befehle schnell nachschlagen              |
-| Projekte               | eigene Arbeit sauber dokumentieren                 |
-| GitHub-Portfolio       | technischen Fortschritt sichtbar machen            |
-| Praktikumsvorbereitung | Linux, Git, Docker und Netzwerkgrundlagen festigen |
-| Fehlersuche            | typische Fehler und Prüfwege nachvollziehen        |
+| Situation | Nutzen |
+|---|---|
+| Lernen | Themen strukturiert wiederholen |
+| Terminal-Praxis | wichtige Befehle schnell nachschlagen |
+| Projekte | eigene Arbeit sauber dokumentieren |
+| GitHub-Portfolio | technischen Fortschritt sichtbar machen |
+| Praktikumsvorbereitung | Linux, Windows, Netzwerke, Docker und Support-Grundlagen festigen |
+| Fehlersuche | typische Fehler und Prüfwege nachvollziehen |
+| Home-Lab | eigene Übungen sauber planen und dokumentieren |
+| spätere Erweiterung | neue Themen wie Python oder Windows/AD sauber ergänzen |
 
 ---
 
@@ -230,14 +374,13 @@ Besonders nützlich ist es für:
 
 Als nächste Schritte sind geplant:
 
-| Bereich           | Geplanter Inhalt                                            |
-| ----------------- | ----------------------------------------------------------- |
-| Netzwerke         | IP, Subnetting, DNS, DHCP, Routing, VLANs, WLAN             |
-| IT-Sicherheit     | Schutzmaßnahmen, Bedrohungen, Zugriffsschutz, Backup        |
-| Virtualisierung   | VMs, NAT, Bridge, Home-Lab, Serverumgebungen                |
-| Datenbanken & SQL | SQL-Abfragen, Tabellen, Joins, Constraints, Praxisbeispiele |
-| Docker            | spätere Erweiterung mit kleinen Laborprojekten              |
-| Home-Lab          | praktische Server-, Netzwerk- und Containerübungen          |
+| Bereich | Geplanter Inhalt |
+|---|---|
+| Python | Grundlagen, Skripting, Dateien, Logs, JSON, Fehlerbehandlung und Automatisierung |
+| LF1 | Unternehmen, Rollen, Geschäftsprozesse und Grundlagen der Ausbildung ergänzen |
+| Windows / Active Directory | Windows Server, Benutzerverwaltung, DNS, DHCP, Gruppenrichtlinien und Domänen-Grundlagen |
+| Home-Lab | praktische Server-, Netzwerk-, Virtualisierungs- und Containerübungen dokumentieren |
+| Praxisprojekte | kleinere FISI-orientierte Projekte mit sauberer Dokumentation ergänzen |
 
 ---
 
@@ -260,11 +403,16 @@ Es verbindet Ausbildungsinhalte, praktische IT-Grundlagen und eigene Übungsproj
 Der aktuelle Fokus liegt auf:
 
 ```text
-Linux
+Fachinformatiker Systemintegration
+Linux und Windows-Grundlagen
+Netzwerkgrundlagen
 Git & GitHub
 Docker
 Datenbanken & SQL
-Lernfelder LF2 bis LF5
+Virtualisierung
+IT-Sicherheit
 praktische Systemintegration
 technische Dokumentation
 ```
+
+Langfristig soll dieses Repository zeigen, wie sich mein Wissen in Richtung Systemadministration, Netzwerkadministration, IT-Support und DevOps-Grundlagen entwickelt.
