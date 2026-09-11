@@ -48,7 +48,7 @@ Dabei geht es besonders um:
 | [Netzwerke](./netzwerke/) | Netzwerkgrundlagen, Dienste, Routing, NAT, VLANs und Troubleshooting | Version 1 abgeschlossen |
 | [IT-Sicherheit](./it-sicherheit/) | Sicherheitsgrundlagen, Schutzmaßnahmen, Datenschutz und Praxis | Version 1 abgeschlossen |
 | [Virtualisierung](./virtualisierung/) | Virtuelle Maschinen, Hypervisor, Netzwerkmodi, Snapshots und Backups | Version 1 abgeschlossen |
-| Python | Python-Grundlagen, Skripting, Dateien, Logs, JSON und Automatisierung | geplant |
+| [Python](./python/) | Python-Grundlagen, Skripting, Dateien, Logs, JSON und Automatisierung | geplant |
 
 ---
 
